@@ -1,0 +1,201 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    color:"black";
+}
+
+html{
+font-size: 63.5%;
+}
+
+main{
+    background-color: rgb(248, 248, 248);
+    
+    max-width: 1500px;
+    width:95%;
+    margin:30px auto;
+    padding: 25px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* justify-content: left; */
+    margin: auto;
+    
+}
+
+.head{
+
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 1px solid rgb(237, 237, 237);
+    height: 50px;   
+}
+
+main .card{
+    /* transform: translateY(-5px); */
+    box-shadow: 15px 15px 30px #bebebe,-15px -15px 30px #ffffff;
+    background: rgb(221,221,221);
+    border-radius: 15px;
+    max-width: 280px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 450px;
+    border: 1px solid lightgray;
+    margin :30px;
+    align-items: left;
+ 
+}
+
+
+main .card:hover{
+    box-shadow: 15px 15px 30px #686868,-15px -15px 30px #bcbcbc;
+    transform: translateY(-1px);
+    transition: 0.3s;
+}
+
+
+
+main .card .image{
+    height: 290px;
+    width: 280px;
+    margin-bottom: 20px;
+}   
+
+main .card .image img{
+    /* display: none; */
+   
+
+    border-radius: 10px;
+    width: 240px;
+    height: 100%;
+    object-fit: cover;  
+    height: 100%;
+    margin-top: 5px;
+   
+}
+
+main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+
+}
+main .card button{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1em;
+    width: 60%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.pro_name ,.price{
+    font-size: 2em;
+}
+
+
+main .card button:hover{
+    background-color: black;
+    color: azure;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+
+main .card button:hover .card{ 
+   background-color: brown;
+}
+
+
+main .card .image:hover img{
+    
+    display: none;
+}
+
+main .card .image .discription{
+    
+    display: none;
+}
+
+main .card .image:hover .discription{
+    transition: 5s;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.2em;
+    font-size: large;
+
+}
+
+@keyframes a1{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(90deg);
+    }
+}
+
+.head {
+    color: #686868;
+    font-family: "Rubik Mono One", monospace;
+    font-size:4em; 
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  i{
+    color: #b7b7b7;
+  }
+
+  i:hover{
+    color: #858585;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+  }
+
+
+
+.footer{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background: rgb(221,221,221);
+    border-radius: 25px;
+    text-align: center;
+    width: 10%;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 40px;
+    padding-top: 7px;  
+    box-shadow: 15px 15px 30px #bebebe,-15px -15px 30px #ffffff;
+
+}  
+
+
+.footer:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color:rgb(77, 77, 77) ;
+    box-shadow: 15px 15px 30px #686868,-15px -15px 30px #bcbcbc;
+
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+}

@@ -1,0 +1,111 @@
+.card::before {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    top: 20%;
+  }
+  
+  .card::before,
+  .card::after {
+    content: "";
+    background-color: #7090fa4b;
+    position: absolute;
+    filter: blur(10px);
+  }
+  
+  .cards {
+    display: flex;
+    gap: 0px;
+  }
+  
+
+
+  .cards .red,
+  .cards .blue,
+  .cards .green {
+    
+    margin-top: 100px;;
+    width: 600px;
+    height: 690px;
+    font-family: "CustomFont", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.11);
+    border: 1px solid rgba(144, 161, 255, 0.171);
+  }
+  
+
+  .cards .blue{
+    margin-top: 72px;
+  }
+
+  
+
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 1;
+   
+  }
+  
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.95, 0.95);
+    z-index: 0;
+
+  }
+  
+
+
+
+  
+  .box4{
+    position:absolute;    
+
+    
+    /* float: left; */
+    margin-top: 0px;
+    width: 100%;
+    height:100px;
+    background-color: rgb(32, 32, 32);
+    z-index: 2;
+    padding-top: 15px;
+}
+
+
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+
+.heading{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 2em;
+    font-size: 3em;
+    font-weight: 700;
+    margin-left: 37%;
+    
+}
+
